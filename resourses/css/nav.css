@@ -1,0 +1,48 @@
+.header_conteiner {
+    display: flex;
+    width: 80%;
+    background: var(--background_body);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 0;
+}
+
+.name_conteiner {
+    display: flex;
+    font-size: 1.5rem;
+    gap: 10px;
+}
+
+.material-symbols-outlined {
+    color: var(--color_icon);
+}
+
+.saludo {
+    animation: saludo 1s linear infinite;
+}
+
+@keyframes saludo {
+    50% {
+        transform: rotate(15deg);
+    }
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.nav_item a, .inicio__redes_link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.nav_item a:hover, .inicio__redes_link:hover {
+    text-decoration: underline;
+    color: #888888;
+}

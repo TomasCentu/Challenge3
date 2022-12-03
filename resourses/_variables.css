@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root {
+    --color_icon: #037f8c;
+    --color_description: #00000066;
+    --background_info: #b0d2e0be;
+    --background_body: #dedfec;
+    --backgruond_card: #FFFFFF44;
+    --fuente_title: 'Open Sans', sans-serif;
+    --fuente_second_title: 'Montserrat', sans-serif;
+}
+
+body {
+    background: var(--background_body);
+}
+
+/* Rodapie */
+.rodapie {
+    text-align: center;
+    width: 100%;
+}
+
+.rodapie__description-heart {
+    color: #ff000077;
+}
