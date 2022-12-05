@@ -57,4 +57,13 @@ $fuente_second_title: 'Montserrat', sans-serif;
     max-width: 350px;
 }
 
+@mixin btn {
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 1rem;
+    color: #fff;
+    background: $color_icon;
+    border-radius: 40px;
+}
+
 // hacer btn-pri

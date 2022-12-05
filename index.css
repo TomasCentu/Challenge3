@@ -322,7 +322,7 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   }
   .estudios .estudios_conteiner {
     width: 100%;
-    gap: 1.5rem;
+    gap: 1rem;
   }
   .estudios .estudios_conteiner .estudio__formaciones_card {
     width: 200px;
@@ -330,7 +330,90 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .estudios .estudios_conteiner .estudio__formaciones_card {
-    width: 250px;
+    width: 225px;
+  }
+}
+.proyectos {
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+.proyectos .proyectos_title {
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.6666666667);
+}
+.proyectos .proyectos_conteiner {
+  margin: 2rem 0 0 0;
+  width: 100%;
+  display: flex;
+  gap: 2rem 6rem;
+  flex-wrap: wrap;
+}
+.proyectos .proyectos_conteiner .proyectos__card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 40%;
+  position: relative;
+  background-color: rgba(176, 210, 224, 0.7450980392);
+  border-radius: 40px;
+}
+.proyectos .proyectos_conteiner .proyectos__card .proyectos__card_title {
+  text-align: center;
+  color: #FFF;
+  margin: 0.5rem 0;
+}
+.proyectos .proyectos_conteiner .proyectos__card .proyectos__card_img {
+  border-radius: 40px;
+  padding: 1.5rem;
+}
+.proyectos .proyectos_conteiner .proyectos__card .proyectos__card_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7333333333);
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  gap: 2rem;
+}
+.proyectos .proyectos_conteiner .proyectos__card .proyectos__card_btn .proyectos__card_btn-btn {
+  background-color: #ffffff;
+  border: none;
+  padding: 1rem;
+  color: #037f8c;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.proyectos .proyectos_conteiner .proyectos__card .proyectos__card_btn .proyectos__card_btn-btn:hover {
+  transform: scale(1.05);
+}
+.proyectos .proyectos_conteiner .proyectos__card .proyectos__card_btn .proyectos__card_btn-btn-sec {
+  border: 1px solid #037f8c;
+  background-color: transparent;
+  color: #FFFFFF;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 1rem;
+}
+.proyectos .proyectos_conteiner .proyectos__card .proyectos__card_btn .proyectos__card_btn-btn-sec:hover {
+  transform: scale(1.05);
+}
+.proyectos .proyectos_conteiner .proyectos__card:hover > .proyectos__card_btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
+  .proyectos .proyectos_conteiner .proyectos__card {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 .contacto {
