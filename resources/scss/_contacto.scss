@@ -1,0 +1,189 @@
+.contacto {
+
+    width: 80%;
+    margin: 2rem auto;
+    padding: .5rem 0;
+
+    .contacto_conteiner {
+
+        width: 65%;
+        margin: 0 auto;
+        display: flex;
+        padding: 0.5rem;
+
+
+        .icon_conteiner {
+
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            gap: 6rem;
+            padding-right: 5rem;
+            
+            .contacto_icon {
+                font-size: 8rem;
+                color: $color_icon;
+
+                &:hover {
+                    animation: shake .25s ;
+                }
+
+                @keyframes shake {
+                    30% {
+                        transform: rotate(-15deg);
+                    }
+                    80% {
+                        transform: rotate(15deg);
+                    }
+                }
+            }
+        }
+
+        .form_conteiner{
+
+            width: calc(70% - .5rem);
+            margin: 2rem 0;
+            align-items: center;
+
+            .contacto_title {
+                @include tituloSec;
+            }
+
+            .contacto__description {
+                @include descripciones;
+
+                &:nth-of-type(1) {
+                    margin: 1rem 0 .2rem 0;
+                }
+
+                &:nth-of-type(2) {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .form {
+
+                .input_conteiner {
+
+                    position: relative;
+
+                    input {
+                        @include inputs;
+                        background: transparent;
+                        border-bottom: solid 1px $color_icon;
+                        padding: .4rem 0;
+
+                        &::placeholder {
+                            visibility: hidden;
+                        }
+
+                        &:focus + label,
+                        &:not(:placeholder-shown) + label {
+                            font-size: 0.875rem;
+                            top: -.15rem;
+                            transition: all 0.25s;
+                        }
+                    }
+
+                    label {
+                        position: absolute;
+                        top: 1.10rem;
+                        left: 0;
+                        transition: all 0.25s;
+                    }
+                }
+
+                textarea {
+                    @include inputs;
+                    padding: .7rem;
+                    border-radius: 25px;
+                    box-sizing: border-box;
+                    resize: none;
+                    background: $backgruond_card;
+                    display: block;
+
+                    &:focus{
+                        outline: solid 1px $color_icon;
+                    }
+                }
+
+                .btn_conteiner {
+
+                    width: 100%;
+                    text-align: center;
+
+                    .btn_form {
+                        @include btn-sec;
+                        transition: .3s;
+
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+
+                        &:active {
+                            transform: scale(.9);
+                        }
+                    }
+                }
+            }     
+        }
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .contacto {
+
+        width: 100%;
+
+        .contacto_conteiner {
+
+            width: 100%;
+            padding: 0;
+
+            .icon_conteiner {
+                width: 20%;
+                padding: 0 2rem;
+
+                .contacto_icon {
+                    font-size: 5rem;
+                }
+            }
+
+            .form_conteiner {
+                width: calc(80% - .5rem);
+                padding: 0 3rem;
+
+                .contacto_title {
+                    font-size: 2rem;
+                }
+
+                .contacto__description {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+    .contacto {
+
+        width: 100%;
+
+        .contacto_conteiner {
+
+            width: 100%;
+            padding: 0;
+
+            .icon_conteiner {
+                width: 20%;
+                padding: 0 2rem;
+            }
+
+            .form_conteiner {
+                width: calc(80% - .5rem);
+                padding: 0 3rem;
+            }
+        }
+    }
+}

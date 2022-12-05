@@ -1,0 +1,28 @@
+@import './variables';
+
+body {
+    background: $background_body;
+}
+
+@import './nav';
+
+@import './inicio';
+
+@import './sobre-mi';
+
+@import './skills';
+
+@import './estudios';
+
+// @import './proyectos';
+
+@import './contacto';
+
+.rodapie {
+    text-align: center;
+    width: 100%;
+}
+
+.rodapie__description-heart {
+    color: #ff000077;
+}

@@ -6,78 +6,42 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Mi Portafolio</title>
-            <link rel="shortcut icon" href="./resourses/images/code-icon.jpg" type="image/x-icon">
+            <link rel="shortcut icon" href="./resources/images/code-icon.jpg" type="image/x-icon">
 
-            <link rel="stylesheet" href="./resourses/reset.css">
-            <link rel="stylesheet" href="./resourses/_variables.css">
+            <!-- styles -->
+            <link rel="stylesheet" href="./resources/reset.css">
+            <link rel="stylesheet" href="./index.css">
 
-            <link rel="stylesheet" href="./resourses/css/nav.css"> 
-            <link rel="stylesheet" href="./resourses/css/inicio.css"> 
-            <link rel="stylesheet" href="./resourses/css/sobre_mi.css"> 
-            <link rel="stylesheet" href="./resourses/css/skills.css"> 
-            <link rel="stylesheet" href="./resourses/css/estudios.css"> 
-            <link rel="stylesheet" href="./resourses/css/proyectos.css"> 
-            <link rel="stylesheet" href="./resourses/css/contacto.css"> 
-
+            <!-- icons -->
             <script src="https://kit.fontawesome.com/a0af9b4810.js" crossorigin="anonymous"></script>
-            
-            <link 
-                rel="stylesheet" 
-                href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" 
-            />
-            <link 
-                rel="stylesheet" 
-                href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" 
-            />
-            <link 
-                rel="stylesheet" 
-                href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" 
-            />
         </head>
 
         <body>
-
+            <!-- Seccion de la barra de navegacion -->
             <header>
-
-                <div class="header_conteiner">
-
-                    <div class="name_conteiner">
-
-                        <span class="material-symbols-outlined">
-                            code
-                        </span>
-                        
-                        <p>
-                            Tomas Centurion
-                        </p>
-
-                        <span class="material-symbols-outlined saludo">
-                            waving_hand
-                        </span>
-                    </div>
-
+                <div class="header_conteiner">                     
+                    <p class="name">Tomas Centurion</p>
+                    
                     <nav>
-
                         <ul class="nav">
-
                             <li class="nav_item">
-                                <a href="#sobre_mi">Sobre mi</a>
+                                <a href="#sobre_mi" class="nav_item_a">Sobre mi</a>
                             </li>
 
                             <li class="nav_item">
-                                <a href="#skills">Skills</a>
+                                <a href="#skills" class="nav_item_a">Skills</a>
                             </li>
 
                             <li class="nav_item">
-                                <a href="#estudios">Estudios</a>
+                                <a href="#estudios" class="nav_item_a">Estudios</a>
                             </li>
 
                             <li class="nav_item">
-                                <a href="#proyectos">Proyectos</a>
+                                <a href="#proyectos" class="nav_item_a">Proyectos</a>
                             </li>
 
                             <li class="nav_item">
-                                <a href="#contacto">Contacto</a>
+                                <a href="#contacto" class="nav_item_a">Contacto</a>
                             </li>
                         </ul>                    
                     </nav>
@@ -85,51 +49,49 @@
             </header>
 
             <main>
-
+                <!-- Seccion inicio de nombre y foto principal -->
                 <section class="inicio">
-
                     <div class="inicio__info">
 
-                        <h1 class="inicio__title">Hola! me llamo Tomas Centurion y ...</h1>
+                        <h1 class="inicio__title">
+                            Hola! Soy Tomás Centurión
+                            <i class="fa-solid fa-hand icon-header saludo"></i>
+                        </h1>                     
 
                         <p class="inicio__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Illum labore sit blanditiis accusantium deleniti quam a explicabo commodi animi natus totam,
-                            laudantium perspiciatis. Velit cupiditate explicabo porro aperiam unde mollitia?
+                            Actualmente soy estudiante en pogramación informática en la universidad de San Martin, Bs.As. (UNSAM). <br>
+                            También estoy formandome junto a Oracle en el programa ONE y en LaunchX de Microsoft.
                         </p>
+
+                        <p class="inicio__description">Dejo mis redes por aqui!</p>
+                        
 
                         <div class="inicio__redes">
 
                             <a class="inicio__redes_link" href="https://github.com/TomasCentu" target="_blank">
                                 Github
-                                <span class="material-symbols-outlined">
-                                    arrow_outward
-                                </span>
+                                <i class="fa-solid fa-location-arrow icon-redes"></i>
                             </a>
 
                             <a class="inicio__redes_link" href="https://www.linkedin.com/in/tomascenturion/" target="_blank">
                                 Linkendin
-                                <span class="material-symbols-outlined">
-                                    arrow_outward
-                                </span>
+                                <i class="fa-solid fa-location-arrow icon-redes"></i>
                             </a>
 
-                            <a class="inicio__redes_link" href="https://1drv.ms/b/s!AkwG9QionREwgTHrHT1PnrAfMK3J" target="_blank">
+                            <a class="inicio__redes_link" href="./resources/curriculum/cv.pdf" target="_blank">
                                 Curriculum
-                                <span class="material-symbols-outlined">
-                                    arrow_outward
-                                </span>
+                                <i class="fa-solid fa-location-arrow icon-redes"></i>
                             </a>
                         </div>
                     </div>
 
                     <div class="inicio__img">
-                        <img src="./resourses/images/un_perro.jpg" alt="img_sobre_mi">
+                        <img src="./resources/images/un_perro.jpg" class="inicio__img-imagen" alt="img_cara">
                     </div>
                 </section>
 
+                <!-- Seccion de resumen sobre mi -->
                 <section class="sobre_mi" id="sobre_mi">
-
                     <div class="sobre_mi__conteiner">
                         
                         <h1 class="sobre_mi__title">Sobre mi</h1>
@@ -137,18 +99,19 @@
                         <p class="sobre_mi__description">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Sunt ut amet aliquam? Aliquam aspernatur consequuntur, quaerat vel amet, 
-                            temporibus voluptatem possimus omnis sit consectetur magnam quia inventore consequatur modi ipsam.
+                            temporibus voluptatem
+                        </p>
+                        <p class="sobre_mi__description">
+                            ossimus omnis sit consectetur magnam quia inventore consequatur modi ipsam.
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Sunt ut amet aliquam? Aliquam aspernatur consequuntur, quaerat vel amet, 
                             temporibus voluptatem possimus omnis sit consectetur magnam quia inventore consequatur modi ipsam.
                         </p>
-
-                        <img src="#" alt="sobre_mi__firma" class="sobre_mi__firma">
                     </div>
                 </section>
 
+                <!-- Seccion de habilidades aprendidas -->
                 <section class="skills" id="skills">
-
                     <div class="skills_conteiner">
 
                         <h1 class="skills__title">Skills</h1>
@@ -190,47 +153,48 @@
                     </div>
                 </section>
 
+                <!-- Seccion de formacion lograda hasta el momento -->
                 <section class="estudios" id="estudios">
 
-                    <h1 class="estudios__title">Formación académica</h1>
+                    <h1 class="estudios__title">Formación Académica</h1>
 
                     <div class="estudios_conteiner">
                         
                         <div class="estudio__formaciones_card">
-                            <img src="./resourses/images/ONE.png" alt="imagen-formacion-ONE">
+                            <img src="./resources/images/ONE.png" class="estudio__formaciones_card-img" alt="imagen-formacion-ONE">
                             <h2 class="formaciones__card_title">Oracle Next Education</h2>
                             <p class="formaciones__card_description">En curso - Oracle + Alura Latam</p>                 
                         </div>
                         <div class="estudio__formaciones_card">
-                            <img src="./resourses/images/LaunchX.png" alt="imagen-formacion-LaunchX">
+                            <img src="./resources/images/LaunchX.png" class="estudio__formaciones_card-img" alt="imagen-formacion-LaunchX">
                             <h2 class="formaciones__card_title">Launch X - Microsoft</h2>
                             <p class="formaciones__card_description">En curso - Innovacción Virtual</p>                 
                         </div>
                         <div class="estudio__formaciones_card">
-                            <img src="./resourses/images/CUI.png" alt="imagen-formacion-CUI">
+                            <img src="./resources/images/CUI.png" class="estudio__formaciones_card-img" alt="imagen-formacion-CUI">
                             <h2 class="formaciones__card_title">CUI - Curso de ingles</h2>
                             <p class="formaciones__card_description">En curso - CUI</p>                 
                         </div>
                         <div class="estudio__formaciones_card">
-                            <img src="./resourses/images/ARGprog.jpg" alt="imagen-formacion-argentina_programa">
+                            <img src="./resources/images/ARGprog.jpg" class="estudio__formaciones_card-img" alt="imagen-formacion-argentina_programa">
                             <h2 class="formaciones__card_title">Argentina Programa</h2>
                             <p class="formaciones__card_description">En curso - INTI</p>                 
                         </div>
                         <div class="estudio__formaciones_card">
-                            <img src="./resourses/images/UNSAM.png" alt="imagen-formacion-UNSAM">
+                            <img src="./resources/images/UNSAM.png" class="estudio__formaciones_card-img" alt="imagen-formacion-UNSAM">
                             <h2 class="formaciones__card_title">Tecnicatura en Progr. informatica</h2>
                             <p class="formaciones__card_description">En curso - UNSAM</p>                 
                         </div>
                     </div>
                 </section>
                 
+                <!-- Seccion de proyectos hechos y futuros -->
                 <section class="proyectos" id="proyectos">
 
                 </section>
 
+                <!-- Seccion de formulario de contacto -->
                 <section class="contacto" id="contacto">
-                    
-
                     <div class="contacto_conteiner">
 
                         <div class="icon_conteiner">
@@ -247,7 +211,7 @@
                                 Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.
                             </p>
 
-                            <form action="#">
+                            <form action="#" class="form">
                                 <div class="input_conteiner">
                                     <input 
                                     type="text" 
@@ -294,7 +258,7 @@
                                 <div class="btn_conteiner">
                                     <button 
                                         type="submit" 
-                                        class="btn_form btn"
+                                        class="btn_form"
                                     >
                                         Enviar
                                     </button>
@@ -308,9 +272,9 @@
             <footer>
                 <div class="rodapie">
                     <p class="rodapie__description">
-                        Hecho con 
-                        <i class="fa-solid fa-heart rodapie__description-heart"></i> 
-                        por Tomas Centurion
+                        Hecho con  
+                        <i class="fa-solid fa-heart rodapie__description-heart"></i>  
+                         por Tomas Centurion
                     </p>
                 </div>
             </footer>

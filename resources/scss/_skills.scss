@@ -1,0 +1,53 @@
+.skills_conteiner {
+    @include conteiners;
+    display: block;
+    margin: 3rem auto;
+
+    .skills__title {
+        @include tituloSec;
+        margin: 0 0 1rem 0;
+    }
+
+    .skills__habilidades {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+
+        .skills__habilidades_card {
+            width: 125px;
+            height: 125px;
+            padding: 1rem;
+            background: $backgruond_card;
+            text-align: center;
+
+            .icon_skills{
+                font-size: 5rem;
+                padding: 10px;
+                color: $color_icon;
+            }
+
+            .icon_description{
+                color: $color_description;
+            }
+        }
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .skills_conteiner {
+        .skills__habilidades {
+            gap: .4rem;
+            padding: 0;
+
+            .skills__habilidades_card {
+                width: 100px;
+                height: 100px;
+
+                .icon_skills {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+}

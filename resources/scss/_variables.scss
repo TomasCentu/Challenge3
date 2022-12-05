@@ -1,0 +1,60 @@
+$color_icon: #037f8c;
+$color_description: #00000066;
+$background_info: #b0d2e0be;
+$background_body: #dedfec;
+$backgruond_card: #FFFFFF44;
+$fuente_title: 'Open Sans', sans-serif;
+$fuente_second_title: 'Montserrat', sans-serif;
+
+@mixin conteiners {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@mixin links {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+@mixin hover_links {
+    border-bottom: solid 3px $color_icon;
+    color: #00000099;
+}
+
+@mixin tituloSec {
+    font-size: 2.5rem;
+    font-family: $fuente_second_title;
+    font-weight: bold;
+    color: #000000AA;
+}
+
+@mixin descripciones {
+    color: $color_description;
+    font-size: 1.3rem;
+    padding: .5rem 0;
+}
+
+@mixin inputs {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 550px;
+    margin: 1.2rem 0;
+    border: none;
+    outline: none;
+}
+
+@mixin btn-sec {
+    border: solid 1px $color_icon;
+    width: 50%;
+    padding: .5rem 0;
+    text-transform: uppercase;
+    border-radius: 25px;
+    background: $backgruond_card;
+    max-width: 350px;
+}
+
+// hacer btn-pri
