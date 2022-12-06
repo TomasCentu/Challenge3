@@ -2,6 +2,15 @@ body {
   background: #dedfec;
   transition: background-color 0.3s;
 }
+body::-webkit-scrollbar {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background: #037f8c;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #42919a;
+}
 
 header {
   position: sticky;
@@ -15,12 +24,13 @@ header .header_conteiner {
   padding: 0 1rem;
   background: #dedfec;
   justify-content: space-between;
-  margin: 0 0 1.5rem 0;
   border-bottom: solid 0.5px rgba(136, 136, 136, 0.2666666667);
   transition: background-color 0.3s;
 }
 header .header_conteiner .name {
   font-size: 1.5rem;
+  user-select: none;
+  cursor: pointer;
 }
 header .header_conteiner .name::before {
   content: "{ ";
@@ -72,7 +82,6 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   margin: 0 auto;
   gap: 2rem;
   padding: 1rem;
-  justify-content: space-between;
   position: relative;
 }
 .inicio .checkbox-mode {
@@ -123,7 +132,8 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   text-align: left;
 }
 .inicio .inicio__info .inicio__title {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
@@ -275,6 +285,7 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   }
 }
 .sobre_mi {
+  box-sizing: border-box;
   background: rgba(176, 210, 224, 0.7450980392);
   padding: 1.5rem 0;
 }
@@ -317,6 +328,11 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
     font-size: 0.9rem;
   }
 }
+.skills {
+  padding-top: 1rem;
+  box-sizing: border-box;
+}
+
 .skills_conteiner {
   display: flex;
   width: 80%;
@@ -390,6 +406,8 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   text-align: center;
   margin: 0 auto;
   display: block;
+  padding-top: 1rem;
+  box-sizing: border-box;
 }
 .estudios .estudios__title {
   font-size: 2.5rem;
@@ -460,6 +478,8 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   width: 80%;
   margin: 2rem auto 0 auto;
   text-align: center;
+  box-sizing: border-box;
+  padding-top: 1rem;
 }
 .proyectos .proyectos_title {
   font-size: 2.5rem;
@@ -482,6 +502,7 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   position: relative;
   background-color: rgba(176, 210, 224, 0.7450980392);
   border-radius: 40px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3333333333);
 }
 .proyectos .proyectos_conteiner .proyectos__card .proyectos__card_title {
   text-align: center;
@@ -499,14 +520,13 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7333333333);
+  background-color: rgba(0, 0, 0, 0.4666666667);
   width: 100%;
   height: 100%;
   border-radius: 40px;
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
-  border: 2px solid #000;
   gap: 2rem;
 }
 .proyectos .proyectos_conteiner .proyectos__card .proyectos__card_btn .proyectos__card_btn-btn {
@@ -648,6 +668,7 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   color: #EE0000;
   font-size: 0.7rem;
   visibility: hidden;
+  display: block;
 }
 .contacto .contacto_conteiner .form_conteiner .form textarea {
   box-sizing: border-box;
@@ -754,6 +775,12 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
 body.black {
   background-color: #2c2929;
 }
+body.black::-webkit-scrollbar-thumb {
+  background: #88d0d8;
+}
+body.black::-webkit-scrollbar-thumb:hover {
+  background: #69b7bf;
+}
 body.black header .header_conteiner {
   background-color: #2c2929;
   color: #CCCCCC;
@@ -818,6 +845,7 @@ body.black .proyectos .proyectos_title {
 }
 body.black .proyectos .proyectos_conteiner .proyectos__card {
   background-color: #88d0d8;
+  box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.3333333333);
 }
 body.black .proyectos .proyectos_conteiner .proyectos__card .proyectos__card_title {
   color: #2c2929;

@@ -3,6 +3,18 @@
 body {
     background: $background_body;
     transition: background-color .3s;
+
+    &::-webkit-scrollbar {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $color_icon;
+
+        &:hover {
+            background: #42919a;
+        }
+    }
 }
 
 @import './nav';

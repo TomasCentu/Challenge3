@@ -2,7 +2,6 @@
     @include conteiners;
     gap: 2rem;
     padding: 1rem;
-    justify-content: space-between;
     position: relative;
 
     .checkbox-mode {
@@ -60,7 +59,8 @@
         text-align: left;
 
         .inicio__title {
-            font-size: 3.5rem;
+            font-size: 3rem;
+            margin-bottom: 1rem;
             font-family: $fuente_title;
             font-weight: bold;
 

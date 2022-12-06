@@ -1,6 +1,8 @@
 .estudios {
     @include conteiners;
     display: block;
+    padding-top: 1rem;
+    box-sizing: border-box;
 
     .estudios__title {
         @include tituloSec;

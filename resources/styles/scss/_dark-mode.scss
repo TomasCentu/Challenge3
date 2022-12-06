@@ -1,6 +1,14 @@
 body.black {
     background-color: $color_darck-mode;
 
+    &::-webkit-scrollbar-thumb {
+        background: $color_icon_darck-mode;
+
+        &:hover {
+            background: #69b7bf;
+        }
+    }
+
     header {
         .header_conteiner {
             background-color: $color_darck-mode;
@@ -116,6 +124,7 @@ body.black {
 
             .proyectos__card {
                 background-color: $color_icon_darck-mode;
+                box-shadow: 10px 10px 5px #FFFFFF55;
 
                 .proyectos__card_title {
                     color: $color_darck-mode;
