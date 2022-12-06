@@ -50,7 +50,7 @@ header {
     }
 }
 
-@media (min-width: 280px) and (max-width: 500px){
+@media (min-width: 280px) and (max-width: 768px){
     header {
 
         .header_conteiner {
@@ -74,16 +74,4 @@ header {
             }
         }
     }    
-}
-
-@media (min-width: 500px) and (max-width: 768px){
-    header {
-        .header_conteiner {
-            .nav {
-                .nav_item {
-                    margin: 0 auto;
-                }
-            }
-        }
-    }
 }

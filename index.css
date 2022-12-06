@@ -45,7 +45,7 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-@media (min-width: 280px) and (max-width: 500px) {
+@media (min-width: 280px) and (max-width: 768px) {
   header .header_conteiner {
     text-align: center;
     display: block;
@@ -60,11 +60,6 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   }
   header .header_conteiner .nav .nav_item .nav_item_a {
     font-size: 1rem;
-  }
-}
-@media (min-width: 500px) and (max-width: 768px) {
-  header .header_conteiner .nav .nav_item {
-    margin: 0 auto;
   }
 }
 .inicio {
@@ -177,6 +172,7 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
     font-size: 0.9rem;
   }
   .inicio .inicio__info .inicio__redes {
+    margin-top: 0.5rem;
     gap: 2rem;
   }
   .inicio .inicio__info .inicio__redes .inicio__redes_link {
