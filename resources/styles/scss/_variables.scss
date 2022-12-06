@@ -1,3 +1,7 @@
+$color_darck-mode: #2c2929;
+$color_icon_darck-mode: #88d0d8;
+$color_description_darck-mode: #CCCCCC77;
+$backgruond_card_darck-mode: #FFFFFF11;
 $color_icon: #037f8c;
 $color_description: #00000066;
 $background_info: #b0d2e0be;
@@ -42,13 +46,13 @@ $fuente_second_title: 'Montserrat', sans-serif;
     box-sizing: border-box;
     width: 100%;
     max-width: 550px;
-    margin: 1.2rem 0;
+    margin: 1rem 0 .5rem 0;
     border: none;
     outline: none;
 }
 
 @mixin btn-sec {
-    border: solid 1px $color_icon;
+    border: solid 2px $color_icon;
     width: 50%;
     padding: .5rem 0;
     text-transform: uppercase;
@@ -65,5 +69,3 @@ $fuente_second_title: 'Montserrat', sans-serif;
     background: $color_icon;
     border-radius: 40px;
 }
-
-// hacer btn-pri

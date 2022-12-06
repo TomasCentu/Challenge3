@@ -1,5 +1,6 @@
 body {
   background: #dedfec;
+  transition: background-color 0.3s;
 }
 
 header {
@@ -16,6 +17,7 @@ header .header_conteiner {
   justify-content: space-between;
   margin: 0 0 1.5rem 0;
   border-bottom: solid 0.5px rgba(136, 136, 136, 0.2666666667);
+  transition: background-color 0.3s;
 }
 header .header_conteiner .name {
   font-size: 1.5rem;
@@ -71,6 +73,49 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   gap: 2rem;
   padding: 1rem;
   justify-content: space-between;
+  position: relative;
+}
+.inicio .checkbox-mode {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.inicio .checkbox-mode #mode {
+  display: none;
+}
+.inicio .checkbox-mode label {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 2px solid #037f8c;
+  border-radius: 40px;
+  padding: 5px;
+}
+.inicio .checkbox-mode label .fa-sun {
+  color: orange;
+  font-size: 20px;
+  text-shadow: 0 0 10px orange;
+  transform: translateX(15px);
+  opacity: 1;
+  transition: 0.3s;
+}
+.inicio .checkbox-mode label .fa-moon {
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 0 0 10px #fff;
+  transform: translateX(0px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.inicio .checkbox-mode #mode:checked ~ label > .fa-sun {
+  opacity: 0;
+  transform: translateX(0px);
+  border-color: #88d0d8;
+}
+.inicio .checkbox-mode #mode:checked ~ label > .fa-moon {
+  opacity: 1;
+  transform: translateX(-20px);
 }
 .inicio .inicio__info {
   margin: 2rem 0 1.5rem 0;
@@ -105,6 +150,7 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   margin: 0 auto;
   justify-content: center;
   gap: 3rem;
+  margin-top: 1rem;
 }
 .inicio .inicio__info .inicio__redes .inicio__redes_link {
   text-decoration: none;
@@ -451,6 +497,8 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   justify-content: center;
   align-items: center;
   position: absolute;
+  top: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.7333333333);
   width: 100%;
   height: 100%;
@@ -458,6 +506,7 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
+  border: 2px solid #000;
   gap: 2rem;
 }
 .proyectos .proyectos_conteiner .proyectos__card .proyectos__card_btn .proyectos__card_btn-btn {
@@ -565,12 +614,13 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
 }
 .contacto .contacto_conteiner .form_conteiner .form .input_conteiner {
   position: relative;
+  margin-bottom: 0.5rem;
 }
 .contacto .contacto_conteiner .form_conteiner .form .input_conteiner input {
   box-sizing: border-box;
   width: 100%;
   max-width: 550px;
-  margin: 1.2rem 0;
+  margin: 1rem 0 0.5rem 0;
   border: none;
   outline: none;
   background: transparent;
@@ -585,17 +635,25 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   top: -0.15rem;
   transition: all 0.25s;
 }
+.contacto .contacto_conteiner .form_conteiner .form .input_conteiner input.error {
+  border-color: #EE0000;
+}
 .contacto .contacto_conteiner .form_conteiner .form .input_conteiner label {
   position: absolute;
   top: 1.1rem;
   left: 0;
   transition: all 0.25s;
 }
+.contacto .contacto_conteiner .form_conteiner .form .input_conteiner span.input-message-error {
+  color: #EE0000;
+  font-size: 0.7rem;
+  visibility: hidden;
+}
 .contacto .contacto_conteiner .form_conteiner .form textarea {
   box-sizing: border-box;
   width: 100%;
   max-width: 550px;
-  margin: 1.2rem 0;
+  margin: 1rem 0 0.5rem 0;
   border: none;
   outline: none;
   padding: 0.7rem;
@@ -604,16 +662,17 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   resize: none;
   background: rgba(255, 255, 255, 0.2666666667);
   display: block;
+  margin-bottom: 0.5rem;
 }
 .contacto .contacto_conteiner .form_conteiner .form textarea:focus {
-  outline: solid 1px #037f8c;
+  outline: solid 2px #037f8c;
 }
 .contacto .contacto_conteiner .form_conteiner .form .btn_conteiner {
   width: 100%;
   text-align: center;
 }
 .contacto .contacto_conteiner .form_conteiner .form .btn_conteiner .btn_form {
-  border: solid 1px #037f8c;
+  border: solid 2px #037f8c;
   width: 50%;
   padding: 0.5rem 0;
   text-transform: uppercase;
@@ -621,9 +680,6 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   background: rgba(255, 255, 255, 0.2666666667);
   max-width: 350px;
   transition: 0.3s;
-}
-.contacto .contacto_conteiner .form_conteiner .form .btn_conteiner .btn_form:hover {
-  transform: scale(1.05);
 }
 .contacto .contacto_conteiner .form_conteiner .form .btn_conteiner .btn_form:active {
   transform: scale(0.9);
@@ -695,6 +751,122 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
     padding: 0 3rem;
   }
 }
+body.black {
+  background-color: #2c2929;
+}
+body.black header .header_conteiner {
+  background-color: #2c2929;
+  color: #CCCCCC;
+  border-color: rgba(204, 204, 204, 0.4666666667);
+}
+body.black header .header_conteiner .name::before {
+  color: #88d0d8;
+}
+body.black header .header_conteiner .name::after {
+  color: #88d0d8;
+}
+body.black header .header_conteiner .nav .nav_item .nav_item_a {
+  color: #CCCCCC;
+}
+body.black header .header_conteiner .nav .nav_item .nav_item_a:hover {
+  border-color: #88d0d8;
+}
+body.black .inicio .inicio__info .inicio__title {
+  color: #CCCCCC;
+}
+body.black .inicio .inicio__info .inicio__title .saludo {
+  color: #88d0d8;
+}
+body.black .inicio .inicio__info .inicio__description {
+  color: #CCCCCC;
+}
+body.black .inicio .inicio__info .inicio__redes .inicio__redes_link {
+  color: #CCCCCC;
+}
+body.black .inicio .inicio__info .inicio__redes .inicio__redes_link .icon-redes {
+  color: #88d0d8;
+}
+body.black .sobre_mi {
+  background-color: #88d0d8;
+}
+body.black .sobre_mi .sobre_mi__conteiner .sobre_mi__title {
+  color: #2c2929;
+}
+body.black .sobre_mi .sobre_mi__conteiner .sobre_mi__description {
+  color: #2c2929;
+}
+body.black .skills_conteiner .skills__title {
+  color: #CCCCCC;
+}
+body.black .skills_conteiner .skills__habilidades .skills__habilidades_card .icon_skills {
+  color: #88d0d8;
+}
+body.black .skills_conteiner .skills__habilidades .skills__habilidades_card .icon_description {
+  color: rgba(204, 204, 204, 0.4666666667);
+}
+body.black .estudios .estudios__title {
+  color: #CCCCCC;
+}
+body.black .estudios .estudios_conteiner .estudio__formaciones_card .formaciones__card_title {
+  color: #CCCCCC;
+}
+body.black .estudios .estudios_conteiner .estudio__formaciones_card .formaciones__card_description {
+  color: rgba(204, 204, 204, 0.4666666667);
+}
+body.black .proyectos .proyectos_title {
+  color: #CCCCCC;
+}
+body.black .proyectos .proyectos_conteiner .proyectos__card {
+  background-color: #88d0d8;
+}
+body.black .proyectos .proyectos_conteiner .proyectos__card .proyectos__card_title {
+  color: #2c2929;
+}
+body.black .contacto .contacto_conteiner .icon_conteiner .contacto_icon {
+  color: #88d0d8;
+}
+body.black .contacto .contacto_conteiner .form_conteiner .contacto_title {
+  color: #CCCCCC;
+}
+body.black .contacto .contacto_conteiner .form_conteiner .contacto__description {
+  color: rgba(204, 204, 204, 0.4666666667);
+}
+body.black .contacto .contacto_conteiner .form_conteiner .form .input_conteiner input {
+  color: #CCCCCC;
+  border-color: #88d0d8;
+}
+body.black .contacto .contacto_conteiner .form_conteiner .form .input_conteiner input.error {
+  border-color: #EE0000;
+}
+body.black .contacto .contacto_conteiner .form_conteiner .form .input_conteiner label {
+  color: rgba(204, 204, 204, 0.4666666667);
+}
+body.black .contacto .contacto_conteiner .form_conteiner .form .input_conteiner span.input-message-error {
+  color: #ba5555;
+}
+body.black .contacto .contacto_conteiner .form_conteiner .form textarea {
+  color: #CCCCCC;
+  border-color: #88d0d8;
+  background-color: rgba(255, 255, 255, 0.0666666667);
+}
+body.black .contacto .contacto_conteiner .form_conteiner .form textarea::placeholder {
+  color: rgba(204, 204, 204, 0.4666666667);
+}
+body.black .contacto .contacto_conteiner .form_conteiner .form .btn_conteiner .btn_form {
+  background-color: rgba(204, 204, 204, 0.4666666667);
+  border-color: #88d0d8;
+  color: #FFFFFF;
+}
+body.black .contacto .contacto_conteiner .form_conteiner .form .btn_conteiner .btn_form:active {
+  background-color: #CCCCCC;
+}
+body.black footer .rodapie .rodapie__description {
+  color: #CCCCCC;
+}
+body.black footer .rodapie .rodapie__description .rodapie__description-heart {
+  color: #FF0000;
+}
+
 .rodapie {
   text-align: center;
   width: 100%;

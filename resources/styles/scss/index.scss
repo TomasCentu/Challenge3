@@ -2,6 +2,7 @@
 
 body {
     background: $background_body;
+    transition: background-color .3s;
 }
 
 @import './nav';
@@ -17,6 +18,8 @@ body {
 @import './proyectos';
 
 @import './contacto';
+
+@import './dark-mode';
 
 .rodapie {
     text-align: center;

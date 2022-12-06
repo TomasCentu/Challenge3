@@ -1,0 +1,200 @@
+body.black {
+    background-color: $color_darck-mode;
+
+    header {
+        .header_conteiner {
+            background-color: $color_darck-mode;
+            color: #CCCCCC;
+            border-color: $color_description_darck-mode;
+
+            .name {
+                &::before {
+                    color: $color_icon_darck-mode;
+                }
+
+                &::after {
+                    color: $color_icon_darck-mode;
+                }
+            }
+
+            .nav {
+                .nav_item {
+                    .nav_item_a {
+                        color: #CCCCCC;
+
+                        &:hover {
+                            border-color: $color_icon_darck-mode;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .inicio {
+        .inicio__info {
+            .inicio__title {                
+                color: #CCCCCC;
+
+                .saludo {
+                    color: $color_icon_darck-mode;
+                }
+            }
+
+            .inicio__description {
+                color: #CCCCCC;
+            }
+
+            .inicio__redes {
+                .inicio__redes_link {
+                    color: #CCCCCC;
+
+                    .icon-redes {
+                        color: $color_icon_darck-mode
+                    }
+                }
+            }
+        }
+    }
+
+    .sobre_mi {
+        background-color: $color_icon_darck-mode;
+
+        .sobre_mi__conteiner {
+            .sobre_mi__title {
+                color: $color_darck-mode;
+            }
+            .sobre_mi__description {
+                color: $color_darck-mode;
+            }
+        }
+    }
+
+    .skills_conteiner {
+        .skills__title {
+            color: #CCCCCC;
+        }
+
+        .skills__habilidades {
+            .skills__habilidades_card {
+                .icon_skills {
+                    color: $color_icon_darck-mode;
+                }
+                .icon_description {
+                    color: $color_description_darck-mode;
+                }
+            }
+        }
+    }
+
+    .estudios {        
+        .estudios__title {
+            color: #CCCCCC;
+        }
+
+        .estudios_conteiner {
+
+            .estudio__formaciones_card {
+
+                .formaciones__card_title {
+                    color: #CCCCCC;
+                }
+
+                .formaciones__card_description {
+                    color: $color_description_darck-mode;
+                }
+            }
+        }
+    }
+
+    .proyectos {
+        .proyectos_title {
+            color: #CCCCCC;
+        }
+
+        .proyectos_conteiner {
+
+            .proyectos__card {
+                background-color: $color_icon_darck-mode;
+
+                .proyectos__card_title {
+                    color: $color_darck-mode;
+                }
+            }
+        }
+    }
+
+    .contacto {
+        .contacto_conteiner {
+
+            .icon_conteiner {
+                .contacto_icon {
+                    color: $color_icon_darck-mode;
+                }
+            }
+
+            .form_conteiner {
+                .contacto_title {
+                    color: #CCCCCC;
+                }
+
+                .contacto__description {
+                    color: $color_description_darck-mode;
+                }
+
+                .form {
+                    .input_conteiner {
+                        input {
+                            color: #CCCCCC;
+                            border-color: $color_icon_darck-mode;
+
+                            &.error {
+                                border-color: #EE0000;
+                            }
+                        }
+                        label {
+                            color: $color_description_darck-mode;
+                        }
+                        span.input-message-error {
+                            color: #ba5555;
+                        }
+                    }
+
+                    textarea {
+                        color: #CCCCCC;
+                        border-color: $color_icon_darck-mode;
+                        background-color: $backgruond_card_darck-mode;
+
+                        &::placeholder {
+                            color: $color_description_darck-mode;
+                        }
+                    }
+
+                    .btn_conteiner {
+                        .btn_form {
+                            background-color: $color_description_darck-mode;
+                            border-color: $color_icon_darck-mode;
+                            color: #FFFFFF;
+
+                            &:active {
+                                background-color: #CCCCCC;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .rodapie {
+            .rodapie__description {
+                color: #CCCCCC;
+
+                .rodapie__description-heart {
+                    color: #FF0000;
+                }
+            }
+        }
+    }
+}

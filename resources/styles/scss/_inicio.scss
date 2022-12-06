@@ -3,6 +3,56 @@
     gap: 2rem;
     padding: 1rem;
     justify-content: space-between;
+    position: relative;
+
+    .checkbox-mode {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        #mode {
+            display: none;
+        }
+
+        label {
+            display: flex;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border: 2px solid $color_icon;
+            border-radius: 40px;
+            padding: 5px;
+
+            .fa-sun {
+                color: orange;
+                font-size: 20px;
+                text-shadow: 0 0 10px orange;
+                transform: translateX(15px);
+                opacity: 1;
+                transition: .3s;
+            }
+
+            .fa-moon {
+                color: #fff;
+                font-size: 20px;
+                text-shadow: 0 0 10px #fff;
+                transform: translateX(0px);
+                opacity: 0;
+                transition: .3s;
+            }
+        }
+
+        #mode:checked ~ label > .fa-sun {
+            opacity: 0;
+            transform: translateX(0px);
+            border-color: $color_icon_darck-mode;
+        }
+
+        #mode:checked ~ label > .fa-moon {
+            opacity: 1;
+            transform: translateX(-20px);            
+        }
+    }
 
     .inicio__info {
         margin: 2rem 0 1.5rem 0;
@@ -35,6 +85,7 @@
             @include conteiners;
             justify-content: center;
             gap: 3rem;
+            margin-top: 1rem;
 
             .inicio__redes_link {
                 @include links;

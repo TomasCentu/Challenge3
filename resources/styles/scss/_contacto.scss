@@ -39,7 +39,7 @@
             }
         }
 
-        .form_conteiner{
+        .form_conteiner {
 
             width: calc(70% - .5rem);
             margin: 2rem 0;
@@ -66,6 +66,7 @@
                 .input_conteiner {
 
                     position: relative;
+                    margin-bottom: .5rem;
 
                     input {
                         @include inputs;
@@ -83,6 +84,10 @@
                             top: -.15rem;
                             transition: all 0.25s;
                         }
+
+                        &.error {
+                            border-color: #EE0000;
+                        }
                     }
 
                     label {
@@ -90,6 +95,12 @@
                         top: 1.10rem;
                         left: 0;
                         transition: all 0.25s;
+                    }
+
+                    span.input-message-error {
+                        color: #EE0000;
+                        font-size: .7rem;
+                        visibility: hidden;
                     }
                 }
 
@@ -101,9 +112,10 @@
                     resize: none;
                     background: $backgruond_card;
                     display: block;
+                    margin-bottom: .5rem;
 
                     &:focus{
-                        outline: solid 1px $color_icon;
+                        outline: solid 2px $color_icon;
                     }
                 }
 
@@ -115,10 +127,6 @@
                     .btn_form {
                         @include btn-sec;
                         transition: .3s;
-
-                        &:hover {
-                            transform: scale(1.05);
-                        }
 
                         &:active {
                             transform: scale(.9);

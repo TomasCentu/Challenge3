@@ -9,8 +9,8 @@
             <link rel="shortcut icon" href="./resources/images/code-icon.jpg" type="image/x-icon">
 
             <!-- styles -->
-            <link rel="stylesheet" href="./resources/reset.css">
-            <link rel="stylesheet" href="./index.css">
+            <link rel="stylesheet" href="./resources/styles/css/reset.css">
+            <link rel="stylesheet" href="./resources/styles/css/index.css">
 
             <!-- icons -->
             <script src="https://kit.fontawesome.com/a0af9b4810.js" crossorigin="anonymous"></script>
@@ -26,7 +26,7 @@
                         <ul class="nav">
                             <li class="nav_item">
                                 <a href="#sobre_mi" class="nav_item_a">Sobre mi</a>
-                            </li>
+                          </li>
 
                             <li class="nav_item">
                                 <a href="#skills" class="nav_item_a">Skills</a>
@@ -51,6 +51,19 @@
             <main>
                 <!-- Seccion inicio de nombre y foto principal -->
                 <section class="inicio">
+
+                    <div class="checkbox-mode">
+                        <input 
+                            type="checkbox"
+                            id="mode"
+                            name="checkbox-mode" 
+                        >
+                        <label for="mode">
+                            <i class="fa-solid fa-sun"></i>
+                            <i class="fa-solid fa-moon"></i>
+                        </label>
+                    </div>
+
                     <div class="inicio__info">
 
                         <h1 class="inicio__title">
@@ -263,8 +276,10 @@
                                     required
                                     placeholder="Nombre"
                                     autocomplete="off"
+                                    data-tipo="nombre"
                                     >
                                     <label for="name">Nombre</label>
+                                    <span class="input-message-error">Este campo no es valido</span>
                                 </div>
                                
                                 <div class="input_conteiner">
@@ -275,8 +290,10 @@
                                         required
                                         placeholder="Email"
                                         autocomplete="off"
+                                        data-tipo="email"
                                     >
                                     <label for="email">Email</label>
+                                    <span class="input-message-error">Este campo no es valido</span>
                                 </div>
                                 
                                 <div class="input_conteiner">
@@ -287,8 +304,10 @@
                                         required
                                         placeholder="Asunto"
                                         autocomplete="off"
+                                        data-tipo="asunto"
                                     >
                                     <label for="asunto">Asunto</label>
+                                    <span class="input-message-error">Este campo no es valido</span>
                                 </div>
                                 
 
