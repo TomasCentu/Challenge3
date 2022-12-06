@@ -130,6 +130,36 @@
     }
 }
 
+@media (min-width: 280px) and (max-width: 500px) {
+    .contacto {
+        width: 100%;
+
+        .contacto_conteiner {
+
+            width: 100%;
+            padding: 0;
+            margin: 0 auto;
+
+            .icon_conteiner {
+                display: none;
+            }
+
+            .form_conteiner {
+                width: 80%;
+                margin: 1.5rem auto;
+
+                .contacto_title {
+                    font-size: 2rem;
+                }
+
+                .contacto__description {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 500px) and (max-width: 768px) {
     .contacto {
 

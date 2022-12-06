@@ -12,6 +12,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
+        justify-content: space-evenly;
 
         .estudio__formaciones_card {
             width: 325px;
@@ -37,12 +38,29 @@
     }
 }
 
-@media (min-width: 500px) and (max-width: 768px) {
-.estudios {
-    margin: 0 auto;
+@media (min-width: 280px) and (max-width: 535px){
+    .estudios {
+        margin: 0 auto;
+
         .estudios_conteiner {
             width: 100%;
             gap: 1rem;
+
+            .estudio__formaciones_card {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 535px) and (max-width: 768px) {
+    .estudios {
+        margin: 0 auto;
+
+        .estudios_conteiner {
+            width: 100%;
+            gap: 1rem;
+                
             .estudio__formaciones_card {
                 width: 200px;
             }
@@ -52,7 +70,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px){
     .estudios {
-        .estudios_conteiner {
+        .estudios_conteiner {         
             .estudio__formaciones_card {
                 width: 225px;
             }

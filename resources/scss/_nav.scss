@@ -50,8 +50,9 @@ header {
     }
 }
 
-@media (min-width: 500px) and (max-width: 768px){
+@media (min-width: 280px) and (max-width: 500px){
     header {
+
         .header_conteiner {
             text-align: center;
             display: block;
@@ -59,11 +60,28 @@ header {
             margin: 0;
         
             .nav {
-                .nav_item {
-                    margin: 0 auto;
+                padding-top: 2rem;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                gap: 1rem 2rem;
+
+                .nav_item {               
+
                     .nav_item_a{
                         font-size: 1rem;
                     }
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: 500px) and (max-width: 768px){
+    header {
+        .header_conteiner {
+            .nav {
+                .nav_item {
+                    margin: 0 auto;
                 }
             }
         }

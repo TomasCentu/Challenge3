@@ -17,7 +17,23 @@
     }
 }
 
-@media (min-width: 500px) and (max-width: 768px){
+@media (min-width: 280px) and (max-width: 500px){
+    .sobre_mi {
+        .sobre_mi__conteiner {
+            margin: .5rem auto;
+
+            .sobre_mi__title {
+                font-size: 1.5rem;
+            }
+
+            .sobre_mi__description {
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1024px){
     .sobre_mi {
         .sobre_mi__conteiner {
             margin: .5rem auto;
@@ -27,7 +43,7 @@
             }
 
             .sobre_mi__description {
-                font-size: 1.1rem;
+                font-size: .9rem;
             }
         }
     }

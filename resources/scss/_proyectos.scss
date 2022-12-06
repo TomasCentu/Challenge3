@@ -24,18 +24,18 @@
             background-color: #b0d2e0be;
             border-radius: 40px;
 
-            .proyectos__card_title{
+            .proyectos__card_title {
                 text-align: center;
                 color: #FFF;
                 margin: .5rem 0;
             }
 
-            .proyectos__card_img{
+            .proyectos__card_img {
                 border-radius: 40px;
                 padding: 1.5rem;
             }
 
-            .proyectos__card_btn{
+            .proyectos__card_btn {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -81,6 +81,31 @@
                 visibility: visible;
             }
         }         
+    }
+}
+
+@media (min-width: 280px) and (max-width: 500px){
+    .proyectos {
+
+        .proyectos_conteiner {
+
+            .proyectos__card {
+                width: 100%;
+
+                .proyectos__card_img {
+                    padding: .5rem 1rem;
+                }
+
+                .proyectos__card_btn {
+                    gap: 1rem;
+    
+                    .proyectos__card_btn-btn,
+                    .proyectos__card_btn-btn-sec {
+                        padding: .5rem;
+                    }
+                }
+            }
+        }
     }
 }
 

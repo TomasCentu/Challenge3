@@ -45,18 +45,26 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-@media (min-width: 500px) and (max-width: 768px) {
+@media (min-width: 280px) and (max-width: 500px) {
   header .header_conteiner {
     text-align: center;
     display: block;
     padding-top: 0.5rem;
     margin: 0;
   }
-  header .header_conteiner .nav .nav_item {
-    margin: 0 auto;
+  header .header_conteiner .nav {
+    padding-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem 2rem;
   }
   header .header_conteiner .nav .nav_item .nav_item_a {
     font-size: 1rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  header .header_conteiner .nav .nav_item {
+    margin: 0 auto;
   }
 }
 .inicio {
@@ -125,6 +133,34 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   height: 350px;
 }
 
+@media (min-width: 280px) and (max-width: 500px) {
+  .inicio {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .inicio .inicio__info {
+    width: 100%;
+  }
+  .inicio .inicio__info .inicio__title {
+    font-size: 1.3rem;
+  }
+  .inicio .inicio__info .inicio__description {
+    font-size: 0.7rem;
+  }
+  .inicio .inicio__info .inicio__redes {
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .inicio .inicio__info .inicio__redes .inicio__redes_link {
+    font-size: 0.8rem;
+  }
+  .inicio .inicio__img {
+    width: 0;
+  }
+  .inicio .inicio__img .inicio__img-imagen {
+    display: none;
+  }
+}
 @media (min-width: 500px) and (max-width: 768px) {
   .inicio {
     width: 100%;
@@ -138,10 +174,13 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
     font-size: 1.7rem;
   }
   .inicio .inicio__info .inicio__description {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   .inicio .inicio__info .inicio__redes {
-    gap: 1.5rem;
+    gap: 2rem;
+  }
+  .inicio .inicio__info .inicio__redes .inicio__redes_link {
+    font-size: 0.9rem;
   }
   .inicio .inicio__img {
     width: 0;
@@ -163,6 +202,9 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   }
   .inicio .inicio__info .inicio__description {
     font-size: 1rem;
+  }
+  .inicio .inicio__info .inicio__redes {
+    margin-top: 0.75rem;
   }
   .inicio .inicio__info .inicio__redes .inicio__redes_link {
     font-size: 1rem;
@@ -211,7 +253,18 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   padding: 0.5rem 0;
 }
 
-@media (min-width: 500px) and (max-width: 768px) {
+@media (min-width: 280px) and (max-width: 500px) {
+  .sobre_mi .sobre_mi__conteiner {
+    margin: 0.5rem auto;
+  }
+  .sobre_mi .sobre_mi__conteiner .sobre_mi__title {
+    font-size: 1.5rem;
+  }
+  .sobre_mi .sobre_mi__conteiner .sobre_mi__description {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 1024px) {
   .sobre_mi .sobre_mi__conteiner {
     margin: 0.5rem auto;
   }
@@ -219,7 +272,7 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
     font-size: 2rem;
   }
   .sobre_mi .sobre_mi__conteiner .sobre_mi__description {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 .skills_conteiner {
@@ -243,6 +296,7 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
+  justify-content: space-evenly;
 }
 .skills_conteiner .skills__habilidades .skills__habilidades_card {
   width: 125px;
@@ -260,9 +314,23 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   color: rgba(0, 0, 0, 0.4);
 }
 
+@media (min-width: 280px) and (max-width: 500px) {
+  .skills_conteiner .skills__habilidades {
+    margin-top: 2rem;
+    gap: 1rem 0.4rem;
+    padding: 0;
+  }
+  .skills_conteiner .skills__habilidades .skills__habilidades_card {
+    width: 100px;
+    height: 100px;
+  }
+  .skills_conteiner .skills__habilidades .skills__habilidades_card .icon_skills {
+    font-size: 4rem;
+  }
+}
 @media (min-width: 500px) and (max-width: 768px) {
   .skills_conteiner .skills__habilidades {
-    gap: 0.4rem;
+    gap: 2rem 0.4rem;
     padding: 0;
   }
   .skills_conteiner .skills__habilidades .skills__habilidades_card {
@@ -293,6 +361,7 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  justify-content: space-evenly;
 }
 .estudios .estudios_conteiner .estudio__formaciones_card {
   width: 325px;
@@ -316,7 +385,19 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   color: rgba(0, 0, 0, 0.4);
 }
 
-@media (min-width: 500px) and (max-width: 768px) {
+@media (min-width: 280px) and (max-width: 535px) {
+  .estudios {
+    margin: 0 auto;
+  }
+  .estudios .estudios_conteiner {
+    width: 100%;
+    gap: 1rem;
+  }
+  .estudios .estudios_conteiner .estudio__formaciones_card {
+    width: 100%;
+  }
+}
+@media (min-width: 535px) and (max-width: 768px) {
   .estudios {
     margin: 0 auto;
   }
@@ -410,6 +491,21 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   visibility: visible;
 }
 
+@media (min-width: 280px) and (max-width: 500px) {
+  .proyectos .proyectos_conteiner .proyectos__card {
+    width: 100%;
+  }
+  .proyectos .proyectos_conteiner .proyectos__card .proyectos__card_img {
+    padding: 0.5rem 1rem;
+  }
+  .proyectos .proyectos_conteiner .proyectos__card .proyectos__card_btn {
+    gap: 1rem;
+  }
+  .proyectos .proyectos_conteiner .proyectos__card .proyectos__card_btn .proyectos__card_btn-btn,
+.proyectos .proyectos_conteiner .proyectos__card .proyectos__card_btn .proyectos__card_btn-btn-sec {
+    padding: 0.5rem;
+  }
+}
 @media (min-width: 500px) and (max-width: 1024px) {
   .proyectos .proyectos_conteiner .proyectos__card {
     width: 80%;
@@ -537,6 +633,29 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   transform: scale(0.9);
 }
 
+@media (min-width: 280px) and (max-width: 500px) {
+  .contacto {
+    width: 100%;
+  }
+  .contacto .contacto_conteiner {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .contacto .contacto_conteiner .icon_conteiner {
+    display: none;
+  }
+  .contacto .contacto_conteiner .form_conteiner {
+    width: 80%;
+    margin: 1.5rem auto;
+  }
+  .contacto .contacto_conteiner .form_conteiner .contacto_title {
+    font-size: 2rem;
+  }
+  .contacto .contacto_conteiner .form_conteiner .contacto__description {
+    font-size: 1rem;
+  }
+}
 @media (min-width: 500px) and (max-width: 768px) {
   .contacto {
     width: 100%;
