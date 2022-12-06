@@ -5,6 +5,8 @@ const check = document.getElementById('mode');
 // que se apliquen los estilos del 'modo-oscuro'
 check.addEventListener('change', () => {
     document.body.classList.toggle('black');
+    check.classList.toggle('check');
+    desmarcar();
 });
 
 // *** para validacion de formularios ***
@@ -41,20 +43,31 @@ inputs.forEach( input => {
 // al hacer click en mi nombre del nav
 // va hacia arriba del todo de la pagina, al inicio
 const nombre = document.querySelector('.name');
+const nav = document.querySelectorAll('a.nav_item_a');
 
 nombre.addEventListener('click', () => {
     window.scrollTo(0, 0);
+    desmarcar();
 })
-const nav = document.querySelectorAll('a.nav_item_a');
 
-// se fija que ningun link del nav tenga el borde activado
-// y solo activa al que clickeemos 
-const marcar = (link) => {
+//saca las marcas de los links del nav
+const desmarcar = () => {
     nav.forEach((item) => {
         item.style.borderBottom = 'none';
     });
+};
 
-    link.style.borderBottom = '3px solid #037f8c';
+// se fija que ningun link del nav tenga el borde activado
+// y solo activa al que clickeemos 
+// el color cambia si esta activado el 'modo-oscuro'
+const marcar = (link) => {
+    desmarcar();
+
+    if (check.classList.contains('check')) {
+        link.style.borderBottom = '3px solid #88d0d8';
+    } else {
+        link.style.borderBottom = '3px solid #037f8c';
+    }
 };
 
 // agarra el tamaño del nav cada vez que se hace click en un link del mismo
