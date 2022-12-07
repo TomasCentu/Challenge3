@@ -72,12 +72,10 @@
                         <h1 class="inicio__title">
                             Hola! Soy Tomás Centurión
                             <i class="fa-solid fa-hand icon-header saludo"></i>
-                        </h1>                     
+                        </h1>
 
                         <p class="inicio__description">
-                            Actualmente soy estudiante en pogramación informática en la universidad de San Martin, Bs.As. (UNSAM). 
-                            <br><br>
-                            También estoy formandome junto a Oracle en el programa ONE y en LaunchX de Microsoft.
+                            Argentino Bs.As. - Estudiante de Programación Web Full Stack Developer.
                         </p>
 
                         <p class="inicio__description">Dejo mis redes por aqui!</p>
@@ -103,7 +101,7 @@
                     </div>
 
                     <div class="inicio__img">
-                        <img src="./resources/images/un_perro.jpg" class="inicio__img-imagen" alt="img_cara">
+                        <img src="./resources/images/img_inicio_negro.png" class="inicio__img-imagen" alt="img_cara">
                     </div>
                 </section>
 
@@ -114,15 +112,13 @@
                         <h1 class="sobre_mi__title">Sobre mi</h1>
 
                         <p class="sobre_mi__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Sunt ut amet aliquam? Aliquam aspernatur consequuntur, quaerat vel amet, 
-                            temporibus voluptatem
+                            Soy un estudiante bastante interesado en la programación, actualmente estoy formandome en capacitaciones
+                            como <span>Oracle ONE</span> y <span>LaunchX de Microsoft</span>. 
+                            También estoy comenzando mi carrera universitaria en la Universidad de San Martin (UNSAM)
                         </p>
                         <p class="sobre_mi__description">
-                            ossimus omnis sit consectetur magnam quia inventore consequatur modi ipsam.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Sunt ut amet aliquam? Aliquam aspernatur consequuntur, quaerat vel amet, 
-                            temporibus voluptatem possimus omnis sit consectetur magnam quia inventore consequatur modi ipsam.
+                            Me gusta aprender lo más que pueda, actualmente estoy profundizando mas en tecnologias como 
+                            React y Angular, y también lenguajes como TypeScript, Python, SQL para expandir mis conocimientos.
                         </p>
                     </div>
                 </section>
@@ -281,7 +277,8 @@
                                     required
                                     placeholder="Nombre"
                                     autocomplete="off"
-                                    data-tipo="nombre"
+                                    oninvalid="setCustomValidity('NOMBRE no puede estar vacio')"
+                                    oninput="setCustomValidity('')"
                                     >
                                     <label for="name">Nombre</label>
                                     <span class="input-message-error">Este campo no es valido</span>
@@ -294,8 +291,9 @@
                                         id="email" 
                                         required
                                         placeholder="Email"
-                                        autocomplete="off"
-                                        data-tipo="email"
+                                        autocomplete="off" 
+                                        oninvalid="setCustomValidity('Ingrese un email valido')"
+                                        oninput="setCustomValidity('')"
                                     >
                                     <label for="email">Email</label>
                                     <span class="input-message-error">Este campo no es valido</span>
@@ -309,7 +307,8 @@
                                         required
                                         placeholder="Asunto"
                                         autocomplete="off"
-                                        data-tipo="asunto"
+                                        oninvalid="setCustomValidity('ASUNTO no puede estar vacio')"
+                                        oninput="setCustomValidity('')"
                                     >
                                     <label for="asunto">Asunto</label>
                                     <span class="input-message-error">Este campo no es valido</span>
@@ -319,7 +318,9 @@
                                 <textarea 
                                     name="asunto-text" 
                                     rows="7"
-                                    placeholder="Cuenteme su asunto :)"
+                                    placeholder="Cuenteme su asunto :) (max 500 caracteres)"
+                                    required
+                                    maxlength="500"
                                 ></textarea>
                                 
                                 <div class="btn_conteiner">

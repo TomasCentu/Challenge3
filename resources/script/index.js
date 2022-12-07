@@ -1,5 +1,6 @@
 // *** para dark-mode ***
 const check = document.getElementById('mode');
+const img = document.querySelector('img.inicio__img-imagen');
 
 // solo agrega el estilo a la etiqueta body para
 // que se apliquen los estilos del 'modo-oscuro'
@@ -7,7 +8,16 @@ check.addEventListener('change', () => {
     document.body.classList.toggle('black');
     check.classList.toggle('check');
     desmarcar();
+    cambiarImg();
 });
+
+const cambiarImg = () => {
+    if (check.classList.contains('check')) {    
+        img.src = "./resources/images/img_inicio_blanco.png";
+    } else {        
+        img.src = "./resources/images/img_inicio_negro.png";
+    }
+}
 
 // *** para validacion de formularios ***
 

@@ -53,7 +53,7 @@ header .header_conteiner .nav .nav_item .nav_item_a {
   color: #000000;
 }
 header .header_conteiner .nav .nav_item .nav_item_a:hover {
-  border-bottom: solid 3px #037f8c;
+  border-bottom: solid 3px #037f8c !important;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -100,6 +100,7 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   border: 2px solid #037f8c;
   border-radius: 40px;
   padding: 5px;
+  cursor: pointer;
 }
 .inicio .checkbox-mode label .fa-sun {
   color: orange;
@@ -132,7 +133,7 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   text-align: left;
 }
 .inicio .inicio__info .inicio__title {
-  font-size: 3rem;
+  font-size: 2.7rem;
   margin-bottom: 1rem;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -147,10 +148,18 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
     transform: rotate(35deg);
   }
 }
+.inicio .inicio__info hr {
+  width: 80%;
+  align-items: flex-start;
+}
 .inicio .inicio__info .inicio__description {
   color: rgba(0, 0, 0, 0.4);
   font-size: 1.3rem;
   padding: 0.5rem 0;
+  margin-left: 1rem;
+}
+.inicio .inicio__info .inicio__description:nth-of-type(1) {
+  margin-left: 0;
 }
 .inicio .inicio__info .inicio__redes {
   display: flex;
@@ -168,9 +177,9 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   color: #000000;
 }
 .inicio .inicio__info .inicio__redes .inicio__redes_link:hover {
-  border-bottom: solid 3px #037f8c;
+  border-bottom: solid 3px #037f8c !important;
   color: rgba(0, 0, 0, 0.6);
-  border: none;
+  border: none !important;
 }
 .inicio .inicio__info .inicio__redes .inicio__redes_link .icon-redes {
   color: #037f8c;
@@ -304,6 +313,7 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   color: rgba(0, 0, 0, 0.4);
   font-size: 1.3rem;
   padding: 0.5rem 0;
+  margin-left: 1rem;
 }
 
 @media (min-width: 280px) and (max-width: 500px) {
@@ -625,6 +635,7 @@ header .header_conteiner .nav .nav_item .nav_item_a:hover {
   color: rgba(0, 0, 0, 0.4);
   font-size: 1.3rem;
   padding: 0.5rem 0;
+  margin-left: 1rem;
 }
 .contacto .contacto_conteiner .form_conteiner .contacto__description:nth-of-type(1) {
   margin: 1rem 0 0.2rem 0;
@@ -796,7 +807,7 @@ body.black header .header_conteiner .nav .nav_item .nav_item_a {
   color: #CCCCCC;
 }
 body.black header .header_conteiner .nav .nav_item .nav_item_a:hover {
-  border-color: #88d0d8;
+  border-color: #88d0d8 !important;
 }
 body.black .inicio .inicio__info .inicio__title {
   color: #CCCCCC;
